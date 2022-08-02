@@ -25,7 +25,7 @@ let package = Package(
       targets: ["swift-format"]
     ),
     .library(
-      name: "SwiftFormat",
+      name: "AppleSwiftFormat",
       targets: ["SwiftFormat", "SwiftFormatConfiguration"]
     ),
     .library(
