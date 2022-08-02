@@ -45,7 +45,7 @@ let package = Package(
         "SwiftFormatPrettyPrint",
         "SwiftFormatRules",
         "SwiftFormatWhitespaceLinter",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -56,7 +56,7 @@ let package = Package(
       name: "SwiftFormatCore",
       dependencies: [
         "SwiftFormatConfiguration",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
       ]
     ),
     .target(
@@ -79,7 +79,7 @@ let package = Package(
       name: "SwiftFormatWhitespaceLinter",
       dependencies: [
         "SwiftFormatCore",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
       ]
     ),
 
@@ -88,7 +88,7 @@ let package = Package(
       dependencies: [
         "SwiftFormatCore",
         "SwiftFormatRules",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -99,7 +99,7 @@ let package = Package(
         "SwiftFormatConfiguration",
         "SwiftFormatCore",
         .product(name: "ArgumentParser", package: "swift-argument-parser"),
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "TSCBasic", package: "swift-tools-support-core"),
       ]
     ),
@@ -108,7 +108,7 @@ let package = Package(
       name: "SwiftFormatTests",
       dependencies: [
         "SwiftFormat",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -121,7 +121,7 @@ let package = Package(
       dependencies: [
         "SwiftFormatConfiguration",
         "SwiftFormatCore",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -130,7 +130,7 @@ let package = Package(
       dependencies: [
         "SwiftFormatTestSupport",
         "SwiftFormatWhitespaceLinter",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -142,7 +142,7 @@ let package = Package(
         "SwiftFormatPrettyPrint",
         "SwiftFormatRules",
         "SwiftFormatTestSupport",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -154,7 +154,7 @@ let package = Package(
         "SwiftFormatPrettyPrint",
         "SwiftFormatRules",
         "SwiftFormatTestSupport",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
@@ -165,7 +165,7 @@ let package = Package(
         "SwiftFormatCore",
         "SwiftFormatTestSupport",
         "SwiftFormatWhitespaceLinter",
-        .product(name: "AppleSwiftSyntax", package: "swift-syntax"),
+        .product(name: "AppleSwiftFormat", package: "swift-syntax"),
         .product(name: "SwiftSyntaxParser", package: "swift-syntax"),
       ]
     ),
